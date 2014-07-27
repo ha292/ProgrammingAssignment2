@@ -1,8 +1,6 @@
-## There are two functions here -- makeCacheMatrix() and cacheSolve. At a high level, the work
-## together to cache the inverse of matrices so that we can save repeated calls to solve(). 
-## The idea is to save/cache the results of the calls to solve() functions because computing 
-## inverse is an expensive operation
-
+## There are two functions here -- makeCacheMatrix() and cacheSolve()
+##. At a high level, the work together to cache the inverse of matrices so that we can save repeated calls to solve(). 
+## Because computing inverse is an expensive operation this will save CPU at the cost of some memory 
 
 ## makeCahce() wraps a matrix into a data structure that also stores its inverse
 makeCacheMatrix <- function(x = matrix()) {
